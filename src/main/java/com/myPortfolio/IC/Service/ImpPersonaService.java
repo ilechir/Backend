@@ -8,14 +8,9 @@ import com.myPortfolio.IC.Entity.Persona;
 import com.myPortfolio.IC.Repository.RPersona;
 import java.util.List;
 import java.util.Optional;
-import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-/**
- *
- * @author arace
- */
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 @Transactional
@@ -53,5 +48,6 @@ public class ImpPersonaService{
     public boolean existsByNombre(String nombre){
         return rPersona.existsByNombre(nombre);
     }
-      
+    
+    
 }

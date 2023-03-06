@@ -4,21 +4,18 @@
  */
 package com.myPortfolio.IC.Entity;
 
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-/**
- *
- * @author arace
- */
+
 @Entity
+
 public class Persona {
     
-     @Id
+    @Id
     @GeneratedValue( strategy = GenerationType.IDENTITY )
     private int id;
     
@@ -84,5 +81,8 @@ public class Persona {
     public void setImg(String img) {
         this.img = img;
     }
-    
+   
 }
+
+
+
