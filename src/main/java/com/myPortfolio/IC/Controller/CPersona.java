@@ -7,7 +7,7 @@ package com.myPortfolio.IC.Controller;
 import com.myPortfolio.IC.Dto.dtoPersona;
 import com.myPortfolio.IC.Entity.Persona;
 import com.myPortfolio.IC.Security.Controller.Mensaje;
-import com.myPortfolio.IC.Service.ImpPersonaService;
+import com.myPortfolio.IC.Service.PersonaServiceImpl;
 import java.util.List;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,7 +31,7 @@ import org.springframework.web.bind.annotation.RestController;
         
 public class CPersona {
   @Autowired 
-    ImpPersonaService personaS;
+    PersonaServiceImpl personaS;
     
     @GetMapping("/lista")
     public ResponseEntity<List<Persona>> list(){

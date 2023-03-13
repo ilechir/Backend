@@ -12,7 +12,7 @@
 	<artifactId>IC</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>IC</name>
-	<description>Portfolio De Ileana Chirino</description>
+	<description>ic</description>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
@@ -51,11 +51,7 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-                <dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
+               
                 <dependency>
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-starter-security</artifactId>
@@ -71,20 +67,17 @@
                     <artifactId>commons-lang3</artifactId>
                     <version>3.9</version>
                 </dependency> 
+   
 	</dependencies>
 
 	<build>
 		<plugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-surefire-plugin</artifactId>
-                        <version>2.19.1</version>
-                    </plugin>
+
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
-					<excludes>
+                                    <excludes>
 						<exclude>
 							<groupId>org.projectlombok</groupId>
 							<artifactId>lombok</artifactId>

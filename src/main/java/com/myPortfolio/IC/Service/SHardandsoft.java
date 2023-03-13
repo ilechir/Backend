@@ -5,12 +5,12 @@
 package com.myPortfolio.IC.Service;
 
 import com.myPortfolio.IC.Entity.hardandsoft;
-import com.myPortfolio.IC.Repository.Rhardandsoft;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import com.myPortfolio.IC.Repository.hardandsoftRepository;
 
 /**
  *
@@ -20,7 +20,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 public class SHardandsoft {
     @Autowired
-    Rhardandsoft rhys;
+    hardandsoftRepository rhys;
     
     public List<hardandsoft> list() {
         return rhys.findAll();

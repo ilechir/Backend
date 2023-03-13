@@ -4,7 +4,7 @@
  */
 package com.myPortfolio.IC.Repository;
 
-import com.myPortfolio.IC.Entity.hardandsoft;
+import com.myPortfolio.IC.Entity.Educacion;
 import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
@@ -14,8 +14,9 @@ import org.springframework.stereotype.Repository;
  * @author arace
  */
 @Repository
-
-public interface Rhardandsoft extends JpaRepository<hardandsoft, Integer> {
-    Optional<hardandsoft> findByNombre (String nombre);
-    public boolean existsByNombre (String nombre);
+public interface EducacionRepository extends JpaRepository<Educacion, Integer>{
+    
+    public Optional<Educacion> findByNombreE(String nombreE);
+    public boolean existsByNombreE(String nombreE);
+    
 }

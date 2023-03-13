@@ -5,20 +5,20 @@
 package com.myPortfolio.IC.Service;
 
 import com.myPortfolio.IC.Entity.Persona;
-import com.myPortfolio.IC.Repository.RPersona;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import com.myPortfolio.IC.Repository.PersonaRepository;
 
 @Service
 @Transactional
 
-public class ImpPersonaService{
+public class PersonaServiceImpl{
     
     @Autowired 
-    RPersona rPersona;
+    PersonaRepository rPersona;
 
     
     public List<Persona> list(){

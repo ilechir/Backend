@@ -5,12 +5,12 @@
 package com.myPortfolio.IC.Service;
 
 import com.myPortfolio.IC.Entity.Educacion;
-import com.myPortfolio.IC.Repository.REducacion;
 import java.util.List;
 import java.util.Optional;
 import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import com.myPortfolio.IC.Repository.EducacionRepository;
 
 /**
  *
@@ -20,7 +20,7 @@ import org.springframework.stereotype.Service;
 @Transactional
 public class SEducacion {
     @Autowired
-    REducacion rEducacion;
+    EducacionRepository rEducacion;
     
     public List<Educacion> list(){
         return rEducacion.findAll();
